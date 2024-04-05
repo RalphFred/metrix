@@ -1,0 +1,54 @@
+"use client";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+import MobileNav from "./MobileNav";
+
+export default function Navbar() {
+  const pathname = usePathname();
+
+  let navpath = pathname === '/' ? '' : pathname.replace('/', '/ ');
+  navpath = navpath.slice(0, 2) + navpath.charAt(2).toUpperCase() + navpath.slice(3);
+
+  const navbarWidth = pathname != "/" ? "lg:w-[calc(100vw-100px)]" : "lg:w-[calc(100vw-300px)]";
+
+  return (
+    <div className={`max-sm:hidden lg:block absolute top-0 right-0 z-10 max-sm:w-full ${navbarWidth} px-6 py-2 lg:px-10 bg-white`}>
+      <div className="flex justify-between items-center border-b pb-2 ">
+        <div className="font-bold text-lg">Dashboard</div>
+        <div>
+          <div className="flex text-sm">
+            <select className="bg-peach-2 p-2 rounded-lg">
+              <option value="option1">Nancy's Shop</option>
+              <option value="option2">Raphael's Shop</option>
+            </select>
+            <Image
+              src="/images/notification.svg"
+              alt="notofication icon"
+              width={16}
+              height={16}
+              className="mx-4"
+            />
+            <Image
+              src="/images/profile.svg"
+              alt="profile image"
+              width={32}
+              height={32}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="pt-2 flex items-center">
+        <Image
+          src="/images/home.svg"
+          alt="home icon"
+          width={16}
+          height={16}
+          className="mr-2"
+        />
+         <span className="text-slate-600 text-sm">
+         {navpath}
+         </span>
+      </div>
+    </div>
+  );
+}
