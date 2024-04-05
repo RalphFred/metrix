@@ -21,9 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main className="relative">
-      <Navbar />
-      <MobileNav />
+    <html>
+      {/* 
 
       <div className="flex">
         <Sidebar />
@@ -31,7 +30,12 @@ export default function RootLayout({
         <section className="flex flex-1 h-screen flex-col px-6 pb-6 pt-28 max-md:pb-14 sm:px-14 bg-slate-50">
           <body className={`w-full ${poppins.className}`}>{children}</body>
         </section>
-      </div>
-    </main>
+      </div> */}
+      <body className={`w-full relative ${poppins.className}`}>
+        <Navbar />
+        <Sidebar />
+        {children}
+      </body>
+    </html>
   );
 }

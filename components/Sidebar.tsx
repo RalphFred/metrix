@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 export default function Sidebar() {
   const pathname = usePathname();
   const sidebarWidth = pathname != "/" ? "100px" : "300px";
+  
   return (
     <section
       className={`sticky z-20 left-0 h-screen max-sm:hidden lg:w-[${sidebarWidth}] px-6 py-3 bg-white flex flex-col justify-between`}
@@ -135,7 +136,7 @@ export default function Sidebar() {
           </div>
 
           <div className="">
-            <div className="flex items-center bg-gray-100 p-3 rounded-lg mb-3">
+            <div className="flex items-center bg-gray-100 p-3 rounded-lg mb-3 w-full">
               <Image
                 src="/images/contact.svg"
                 alt="contact icon"
