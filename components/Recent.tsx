@@ -3,7 +3,7 @@ import Order from "./Order"
 
 const Recent = () => {
   return (
-    <div className="p-4">
+    <div className="p-4 bg-white rounded-lg">
       <h3 className="font-semibold mb-2">Recent Orders</h3>
 
       {recentOrders.map((order) => (
