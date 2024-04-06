@@ -42,3 +42,55 @@ export const sidebarLinks = [
     notifications: '',
   },
 ]
+
+export const recentOrders = [
+  {
+    imgUrl: '/images/iphone1.svg',
+    name: 'iPhone12',
+    price: '₦730,000.00 x 1',
+    date: '12 Sept 2022',
+    status: false,
+  },
+  {
+    imgUrl: '/images/iphone2.svg',
+    name: 'iPhone12',
+    price: '₦730,000.00 x 1',
+    date: '12 Sept 2022',
+    status: true,
+  },
+  {
+    imgUrl: '/images/iphone1.svg',
+    name: 'iPhone12',
+    price: '₦730,000.00 x 1',
+    date: '12 Sept 2022',
+    status: true,
+  },
+  {
+    imgUrl: '/images/iphone2.svg',
+    name: 'iPhone12',
+    price: '₦730,000.00 x 1',
+    date: '12 Sept 2022',
+    status: false,
+  },
+  {
+    imgUrl: '/images/iphone2.svg',
+    name: 'iPhone12',
+    price: '₦730,000.00 x 1',
+    date: '12 Sept 2022',
+    status: false,
+  },
+  {
+    imgUrl: '/images/iphone1.svg',
+    name: 'iPhone12',
+    price: '₦730,000.00 x 1',
+    date: '12 Sept 2022',
+    status: true,
+  },
+  {
+    imgUrl: '/images/iphone1.svg',
+    name: 'iPhone12',
+    price: '₦730,000.00 x 1',
+    date: '12 Sept 2022',
+    status: false,
+  },
+]

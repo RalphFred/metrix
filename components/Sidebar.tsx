@@ -7,11 +7,11 @@ import { usePathname } from "next/navigation";
 
 export default function Sidebar() {
   const pathname = usePathname();
-  const sidebarWidth = pathname != "/" ? "100px" : "300px";
+  const isDashboard = pathname === '/';
   
   return (
     <section
-      className={`absolute z-20 left-0 h-screen hidden lg:w-[${sidebarWidth}] px-6 py-3 bg-white lg:flex flex-col justify-between`}
+      className={cn("absolute z-20 left-0 h-screen hidden  px-6 py-3 bg-white lg:flex flex-col justify-between", {"lg:w-[300px]" : isDashboard})}
     >
       {pathname != "/" ? (
         <>

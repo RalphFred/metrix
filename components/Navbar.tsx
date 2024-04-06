@@ -1,7 +1,7 @@
 "use client";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import MobileNav from "./MobileNav";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -9,11 +9,12 @@ export default function Navbar() {
   let navpath = pathname === '/' ? '' : pathname.replace('/', '/ ');
   navpath = navpath.slice(0, 2) + navpath.charAt(2).toUpperCase() + navpath.slice(3);
 
-  const sidebarWidth = pathname != "/" ? "100px" : "300px";
+  const sidebarWidth = pathname != "/" ? "100vw-100px" : "100vw-300px";
   
+  const isDashboard = pathname === '/';
 
   return (
-    <div className={`hidden lg:block absolute top-0 right-0 z-10 max-sm:w-full lg:w-[calc(100vw-${sidebarWidth})] px-6 py-2 lg:px-10 bg-white`}>
+    <div className={cn("hidden lg:block absolute top-0 right-0 z-10 max-sm:w-full px-6 py-2 lg:px-10 bg-white lg:w-[calc(100vw-100px)]", {"lg:w-[calc(100vw-300px)]" : isDashboard})}>
       <div className="flex justify-between items-center border-b pb-2 ">
         <div className="font-bold text-lg">Dashboard</div>
         <div>
