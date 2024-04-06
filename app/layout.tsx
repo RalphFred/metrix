@@ -22,17 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      {/* 
-
-      <div className="flex">
-        <Sidebar />
-
-        <section className="flex flex-1 h-screen flex-col px-6 pb-6 pt-28 max-md:pb-14 sm:px-14 bg-slate-50">
-          <body className={`w-full ${poppins.className}`}>{children}</body>
-        </section>
-      </div> */}
       <body className={`w-full relative ${poppins.className}`}>
         <Navbar />
+        <MobileNav />
         <Sidebar />
         {children}
       </body>

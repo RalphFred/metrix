@@ -9,10 +9,11 @@ export default function Navbar() {
   let navpath = pathname === '/' ? '' : pathname.replace('/', '/ ');
   navpath = navpath.slice(0, 2) + navpath.charAt(2).toUpperCase() + navpath.slice(3);
 
-  const navbarWidth = pathname != "/" ? "lg:w-[calc(100vw-100px)]" : "lg:w-[calc(100vw-300px)]";
+  const sidebarWidth = pathname != "/" ? "100px" : "300px";
+  
 
   return (
-    <div className={`max-sm:hidden lg:block absolute top-0 right-0 z-10 max-sm:w-full ${navbarWidth} px-6 py-2 lg:px-10 bg-white`}>
+    <div className={`hidden lg:block absolute top-0 right-0 z-10 max-sm:w-full lg:w-[calc(100vw-${sidebarWidth})] px-6 py-2 lg:px-10 bg-white`}>
       <div className="flex justify-between items-center border-b pb-2 ">
         <div className="font-bold text-lg">Dashboard</div>
         <div>

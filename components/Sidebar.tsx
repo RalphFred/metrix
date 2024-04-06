@@ -11,7 +11,7 @@ export default function Sidebar() {
   
   return (
     <section
-      className={`sticky z-20 left-0 h-screen max-sm:hidden lg:w-[${sidebarWidth}] px-6 py-3 bg-white flex flex-col justify-between`}
+      className={`absolute z-20 left-0 h-screen hidden lg:w-[${sidebarWidth}] px-6 py-3 bg-white lg:flex flex-col justify-between`}
     >
       {pathname != "/" ? (
         <>
@@ -147,7 +147,7 @@ export default function Sidebar() {
               <span>Contact Support</span>
             </div>
 
-            <div className="bg-peach-2 p-3 rounded-lg mb-6">
+            <div className="bg-peach-2 p-3 rounded-lg mb-3">
               <div className="flex items-center mb-3">
                 <Image
                   src="/images/gift.svg"
