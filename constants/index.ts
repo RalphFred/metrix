@@ -94,3 +94,44 @@ export const recentOrders = [
     status: false,
   },
 ]
+
+export const contactInfo = [
+  {
+    name: 'Jane Doe',
+    imgUrl: '/images/jane.png',
+    extras: true,
+    extrasType: 'new'
+  },
+  {
+    name: 'Janet Adebayo',
+    imgUrl: '/images/janet.png',
+    extras: true,
+    extrasType: 'new'
+  },
+  {
+    name: 'Kunle Adekunle',
+    imgUrl: '/images/kunle.png',
+    extras: true,
+    extrasType: 'count'
+  },
+  {
+    name: 'Jane Doe',
+    imgUrl: '/images/jane.png',
+    extras: false,
+  },
+  {
+    name: 'Janet Adebayo',
+    imgUrl: '/images/janet.png',
+    extras: false,
+  },
+  {
+    name: 'Kunle Adekunle',
+    imgUrl: '/images/kunle.png',
+    extras: false,
+  },
+  {
+    name: 'Jane Doe',
+    imgUrl: '/images/jane.png',
+    extras: false,
+  },
+]
