@@ -24,6 +24,10 @@ export default function Home() {
               CtitleColor2="text-slate-400"
               Cvalue2="₦450"
               Csuperscript2="+20.00"
+              Ctitle3=""
+              CtitleColor3=""
+              Cvalue3=""
+              Csuperscript3=""
             />
           </div>
           <div className="col-span-3 row-span-1">
@@ -38,6 +42,10 @@ export default function Home() {
               CtitleColor2="text-slate-400"
               Cvalue2="1,180"
               Csuperscript2="+85%"
+              Ctitle3=""
+              CtitleColor3=""
+              Cvalue3=""
+              Csuperscript3=""
             />
           </div>
           <div className="col-span-4 row-span-1">
@@ -99,6 +107,10 @@ export default function Home() {
               CtitleColor2="text-slate-400"
               Cvalue2="30"
               Csuperscript2=""
+              Ctitle3=""
+              CtitleColor3=""
+              Cvalue3=""
+              Csuperscript3=""
             />
           </div>
 
@@ -122,6 +134,10 @@ export default function Home() {
           CtitleColor2="text-slate-400"
           Cvalue2="₦450"
           Csuperscript2="+20.00"
+          Ctitle3=""
+          CtitleColor3=""
+          Cvalue3=""
+          Csuperscript3=""
         />
 
         <Card
@@ -135,6 +151,10 @@ export default function Home() {
           CtitleColor2="text-slate-400"
           Cvalue2="1,180"
           Csuperscript2="+85%"
+          Ctitle3=""
+          CtitleColor3=""
+          Cvalue3=""
+          Csuperscript3=""
         />
 
         <Card
@@ -193,6 +213,10 @@ export default function Home() {
           CtitleColor2="text-slate-400"
           Cvalue2="30"
           Csuperscript2=""
+          Ctitle3=""
+          CtitleColor3=""
+          Cvalue3=""
+          Csuperscript3=""
         />
 
         <Recent />

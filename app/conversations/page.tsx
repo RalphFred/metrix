@@ -34,8 +34,8 @@ export default function ConversationsPage() {
                 />
               </div>
               <div className="mt-4">
-                {contactInfo.map((info) => (
-                  <div className="flex mb-2">
+                {contactInfo.map((info, index) => (
+                  <div className="flex mb-2" key={index}>
                     <div className="w-[15%] mr-4">
                       <Image
                         src={info.imgUrl}
@@ -61,7 +61,7 @@ export default function ConversationsPage() {
                             <span className="w-6 h-6 bg-peach-1 flex items-center justify-center text-sm rounded-full">
                               12
                             </span>
-                          ) }
+                          )}
                         </>
                       ) : (
                         <span></span>
@@ -71,6 +71,45 @@ export default function ConversationsPage() {
                     </div>
                   </div>
                 ))}
+              </div>
+            </div>
+            <div className="col-span-2 bg-white rounded-lg p-4">
+              <div className="flex justify-between ">
+                <div className="flex">
+                  <Image
+                    src="/images/jane.png"
+                    alt="image"
+                    width={50}
+                    height={50}
+                    className="mr-4"
+                  />
+                  <div className="flex flex-col justify-between">
+                    <span className="text-sm font-semibold">Jane Doe</span>
+                    <div className="text-sm flex">
+                      <span className="flex items-center">
+                        <span className="w-1 h-1 rounded-full bg-blue-1 mr-1"></span>
+                        <span className="text-blue-2 mr-2">Online</span>
+                      </span>
+                      <span className="text-slate-600">12:55 am</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col justify-between items-end text-sm">
+                  <div>
+                    <span className="bg-peach-2 px-2 rounded-full mr-4">New Customers</span>
+                    <span className="text-blue-1">View Profile</span>
+                  </div>
+                  <div className="flex">
+                      <Image 
+                       src='/images/orders.svg'
+                       alt="order icon"
+                       width={20}
+                       height={20}
+                       className="mr-2"
+                      />
+                      <span className="text-slate-400">0 Orders</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -9,10 +9,10 @@ export interface CardProps {
   CtitleColor2: string;
   Cvalue2: string;
   Csuperscript2: string;
-  Ctitle3?: string;
-  CtitleColor3?: string;
-  Cvalue3?: string;
-  Csuperscript3?: string;
+  Ctitle3: string;
+  CtitleColor3: string;
+  Cvalue3: string;
+  Csuperscript3: string;
 }
 
 export interface CardTextProps {
