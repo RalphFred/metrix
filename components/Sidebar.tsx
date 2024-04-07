@@ -11,7 +11,7 @@ export default function Sidebar() {
   
   return (
     <section
-      className={cn("absolute z-20 left-0 h-screen hidden  px-6 py-3 bg-white lg:flex flex-col justify-between", {"lg:w-[300px]" : isDashboard})}
+      className={cn("fixed z-20 left-0 h-screen hidden  px-6 py-3 bg-white lg:flex flex-col justify-between", {"lg:w-[300px]" : isDashboard})}
     >
       {pathname != "/" ? (
         <>

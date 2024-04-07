@@ -27,6 +27,7 @@ const config = {
         peach: {
           1: "#FFCC91",
           2: "#FEF5EA",
+          3: "#FFEAD1",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

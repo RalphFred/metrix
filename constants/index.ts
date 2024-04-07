@@ -118,20 +118,24 @@ export const contactInfo = [
     name: 'Jane Doe',
     imgUrl: '/images/jane.png',
     extras: false,
+    extrasType: ''
   },
   {
     name: 'Janet Adebayo',
     imgUrl: '/images/janet.png',
     extras: false,
+    extrasType: ''
   },
   {
     name: 'Kunle Adekunle',
     imgUrl: '/images/kunle.png',
     extras: false,
+    extrasType: ''
   },
   {
-    name: 'Jane Doe',
-    imgUrl: '/images/jane.png',
+    name: 'Kunle Adekunle',
+    imgUrl: '/images/kunle.png',
     extras: false,
+    extrasType: ''
   },
 ]
