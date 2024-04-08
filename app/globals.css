@@ -74,16 +74,3 @@
     @apply bg-background text-foreground;
   }
 }
-
-/* Slide-in animation */
-.conversation-slide-in {
-  transition: transform 0.3s ease-out;
-  transform: translateX(0);
-}
-
-/* Slide-out animation */
-.conversation-slide-out {
-  transition: transform 0.3s ease-out;
-  transform: translateX(100%);
-}
-

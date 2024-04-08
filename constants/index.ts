@@ -10,6 +10,7 @@ export const sidebarLinks = [
     label: 'Orders',
     route: '/orders',
     imgUrl: '/images/orders.svg',
+    imgUrl2: '/images/orders-mini.svg',
     activeImgUrl: '/images/orders-active.svg',
     notifications: '3'
   },

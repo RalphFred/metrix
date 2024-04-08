@@ -17,15 +17,27 @@ export default function ConversationsPage() {
 
   const [showConversation, setShowConversation] = useState(false);
 
+  const [searchQuery, setSearchQuery] = useState("");
+  const [filteredContacts, setFilteredContacts] = useState(contactInfo);
+
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const value = event.target.value;
+    setSearchQuery(value);
+    // Filter the contacts based on the search query
+    const filtered = contactInfo.filter((contact) =>
+      contact.name.toLowerCase().includes(value.toLowerCase())
+    );
+    setFilteredContacts(filtered);
+  };
+
   const handleContactClick = (contact: ContactInfo) => {
     setSelectedContact(contact);
     setShowConversation(true);
   };
 
-
   const handleHideConversation = () => {
     setShowConversation(false);
-  }
+  };
 
   return (
     <section className="bg-blue-3 overflow-x-hidden">
@@ -56,10 +68,12 @@ export default function ConversationsPage() {
                   type="text"
                   placeholder="Search..."
                   className="w-full pl-12 pr-4 py-2 border border-slate-400 outline-none focus:border-2 rounded-lg"
+                  value={searchQuery}
+                  onChange={handleSearchChange}
                 />
               </div>
               <div className="mt-4">
-                {contactInfo.map((info, index) => (
+                {filteredContacts.map((info, index) => (
                   <div
                     className={`flex mb-2 cursor-pointer p-2 rounded-lg ${
                       selectedContact === info ? "bg-blue-3" : ""
@@ -277,6 +291,7 @@ export default function ConversationsPage() {
           </div>
         </div>
       </div>
+
       {/* --------------------- Mobile -------------------------- */}
       <div className="w-screen relative lg:hidden">
         {/* -----------------Contact List ---------------------- */}
@@ -297,14 +312,14 @@ export default function ConversationsPage() {
               type="text"
               placeholder="Search..."
               className="w-full pl-12 pr-4 py-2 border border-slate-400 outline-none focus:border-2 rounded-lg"
+              value={searchQuery}
+              onChange={handleSearchChange}
             />
           </div>
           <div className="mt-4">
-            {contactInfo.map((info, index) => (
+            {filteredContacts.map((info, index) => (
               <div
-                className={`flex mb-2 cursor-pointer p-2 rounded-lg ${
-                  selectedContact === info ? "bg-blue-3" : ""
-                }`}
+                className="flex mb-2 cursor-pointer p-2 rounded-lg"
                 key={index}
                 onClick={() => handleContactClick(info)}
               >
@@ -342,17 +357,21 @@ export default function ConversationsPage() {
         </div>
 
         {/* ---------------------- Conversations ------------------ */}
-        <div className={`p-4 bg-white w-screen h-[calc(100vh-80px)] absolute  top-0 ${showConversation === true ? 'left-0' : 'left-full'}`}>
+        <div
+          className={`p-4 bg-white w-screen h-[calc(100vh-80px)] absolute  top-0 duration-300 ease-in-out ${
+            showConversation === true ? "left-0" : "left-full"
+          }`}
+        >
           {selectedContact && (
             <div className="flex border-b pb-2">
               <Image
-                  src='/images/arrow.svg'
-                  alt="image"
-                  width={20}
-                  height={20}
-                  className="mr-4 cursor-pointer"
-                  onClick={handleHideConversation}
-                />
+                src="/images/arrow.svg"
+                alt="image"
+                width={20}
+                height={20}
+                className="mr-4 cursor-pointer"
+                onClick={handleHideConversation}
+              />
               <div className="flex">
                 <Image
                   src={selectedContact.imgUrl}
