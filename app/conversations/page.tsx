@@ -41,7 +41,7 @@ export default function ConversationsPage() {
 
   return (
     <section className="bg-blue-3 overflow-x-hidden">
-      <div className="hidden lg:block lg:pl-[105px] lg:pt-[85.6px] w-screen min-h-screen">
+      <div className="hidden lg:block lg:pl-[305px] lg:pt-[85.6px] w-screen min-h-screen">
         <div className="p-6 mb-4">
           <div className="flex justify-between items-center mb-6">
             <h3 className="font-semibold">Conversations with Customers</h3>

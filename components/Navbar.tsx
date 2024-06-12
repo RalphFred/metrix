@@ -14,7 +14,7 @@ export default function Navbar() {
   const isDashboard = pathname === '/';
 
   return (
-    <div className={cn("hidden lg:block fixed top-0 right-0 z-10 max-sm:w-full px-6 py-2 lg:px-10 bg-white lg:w-[calc(100vw-100px)]", {"lg:w-[calc(100vw-300px)]" : isDashboard})}>
+    <div className={cn("hidden lg:block fixed top-0 right-0 z-10 max-sm:w-full px-6 py-2 lg:px-10 bg-white lg:w-[calc(100vw-300px)]")}>
       <div className="flex justify-between items-center border-b pb-2 ">
         <div className="font-bold text-lg">Dashboard</div>
         <div>
