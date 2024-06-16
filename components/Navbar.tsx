@@ -20,8 +20,8 @@ export default function Navbar() {
         <div>
           <div className="flex text-sm">
             <select className="bg-peach-2 p-2 rounded-lg">
-              <option value="option1">Nancy's Shop</option>
-              <option value="option2">Raphael's Shop</option>
+              <option value="option1">Caf 1</option>
+              <option value="option2">Caf 2</option>
             </select>
             <Image
               src="/images/notification.svg"

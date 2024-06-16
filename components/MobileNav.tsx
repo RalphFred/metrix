@@ -37,13 +37,13 @@ export default function MobileNav() {
           <div>
             <div className="flex items-center">
               <Image
-                src="/images/logo.svg"
+                src="/images/logo.webp"
                 alt="Logo"
                 width={48}
                 height={48}
                 className="mr-2"
               />
-              <span className="font-black text-xl">Metric</span>
+              <span className="font-black text-xl">UniGrub</span>
             </div>
 
             <div className="mt-8">
