@@ -20,9 +20,9 @@ const config = {
     extend: {
       colors: {
         blue: {
-          1: "#5570F1",
-          2: "#97A5EB",
-          3: "#EEF0FA",
+          1: "#714988",
+          2: "#9c80ac",
+          3: "#e3dbe7",
         },
         peach: {
           1: "#FFCC91",
