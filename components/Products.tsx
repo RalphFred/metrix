@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Products() {
   return(
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-8 justify-around lg:p-12">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-8 justify-around p-4 lg:p-12">
           <div className="flex flex-col items-center">
             <div>
               <Image
