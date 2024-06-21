@@ -19,7 +19,7 @@ export default function MobileNav() {
       <Sheet>
         <div className="flex justify-between items-center">
           <Image 
-           src='/images/logo.svg'
+           src='/images/logo.webp'
            alt="logo icon"
            width={48}
            height={48}
