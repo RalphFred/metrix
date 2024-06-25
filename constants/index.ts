@@ -7,8 +7,8 @@ export const sidebarLinks = [
     notifications: '',
   },
   {
-    label: 'Orders',
-    route: '/orders',
+    label: 'Cart',
+    route: '/cart',
     imgUrl: '/images/orders.svg',
     imgUrl2: '/images/orders-mini.svg',
     activeImgUrl: '/images/orders-active.svg',
